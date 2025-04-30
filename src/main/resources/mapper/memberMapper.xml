@@ -6,7 +6,7 @@
             VALUES (
                     SEQ_OAUTH_MEMBER.NEXTVAL,
                     #{memberEmail},
-                    <if test="memberPassword != null"> ${memberPassword}</if>
+                    <if test="memberPassword != null">#{memberPassword}</if>
                     <if test="memberPassword == null">NULL</if>,
                     <if test="memberPicture != null">#{memberPicture}</if>
                     <if test="memberPicture == null">DEFAULT</if>,
